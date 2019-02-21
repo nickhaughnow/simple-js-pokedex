@@ -1,4 +1,3 @@
-alert('Hello world');
 var repository = [
   {
     name: 'Bulbasaur',
