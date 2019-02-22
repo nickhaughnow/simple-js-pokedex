@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+.main {
   background-color: white;
   color: black;
   font-family: sans-serif;
@@ -19,32 +19,30 @@ body {
   width: 60%;
 }
 
-.green {
+.type-background-color {
   background-color: white;
+}
+
+.green {
   color: green;
 }
 
 .purple {
-  background-color: white;
   color: purple;
 }
 
 .red {
-  background-color: white;
   color: red;
 }
 
 .blue {
-  background-color: white;
   color: blue;
 }
 
 .yellow {
-  background-color: white;
   color: yellow;
 }
 
 .violet {
-  background-color: white;
   color: violet;
 }
