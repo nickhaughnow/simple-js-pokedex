@@ -26,40 +26,31 @@ var repository = [
   }
 ];
 
-for (i = 0; i < repository.length; i++) {
+for (var i = 0; i < repository.length; i++) {
+
   document.write(repository[i].name + ' (height: ' + repository[i].height + 'm)');
 
   if (repository[i].height > 1.5) {
     document.write('<strong> - Wow, that\'s big!</strong> ');
   }
 
-  if (repository[i].type[0] === 'grass') {
-    document.write(' Type: ' + '<span class="green">grass</span><br>');
-  } else if (repository[i].type[0] === 'poison') {
-    document.write(' Type: ' + '<span class="purple">poison</span><br>');
-  } else if (repository[i].type[0] === 'fire') {
-    document.write(' Type: ' + '<span class="red">fire</span><br>');
-  } else if (repository[i].type[0] === 'water') {
-    document.write(' Type: ' + '<span class="blue">water</span><br>');
-  } else if (repository[i].type[0] === 'electric') {
-    document.write(' Type: ' + '<span class="yellow">electric</span><br>');
-  } else if (repository[i].type[0] === 'psychic') {
-    document.write(' Type: ' + '<span class="violet">psychic</span><br>');
-  }
-}
+  document.write(' Type: ')
 
-// for (i = 0; i < repository.length; i++) {
-//     if (repository[i].type[0] === 'grass') {
-//       document.write(' Type: ' + '<span class="green">grass</span><br>');
-//     } else if (repository[i].type[0] === 'poison') {
-//       document.write(' Type: ' + '<span class="purple">poison</span><br>');
-//     } else if (repository[i].type[0] === 'fire') {
-//       document.write(' Type: ' + '<span class="red">fire</span><br>');
-//     } else if (repository[i].type[0] === 'water') {
-//       document.write(' Type: ' + '<span class="blue">water</span><br>');
-//     } else if (repository[i].type[0] === 'electric') {
-//       document.write(' Type: ' + '<span class="yellow">electric</span><br>');
-//     } else if (repository[i].type[0] === 'psychic') {
-//       document.write(' Type: ' + '<span class="violet">psychic</span><br>');
-//   }
-// }
+  for (var j = 0; j < repository[i].type.length; j++) {
+
+    if (repository[i].type[j] === 'grass') {
+      document.write('<span class="type-background-color green">grass </span>');
+    } else if (repository[i].type[j] === 'poison') {
+      document.write('<span class="type-background-color purple">poison </span>');
+    } else if (repository[i].type[j] === 'fire') {
+      document.write('<span class="type-background-color red">fire </span>');
+    } else if (repository[i].type[j] === 'water') {
+      document.write('<span class="type-background-color blue">water </span>');
+    } else if (repository[i].type[j] === 'electric') {
+      document.write('<span class="type-background-color yellow">electric </span>');
+    } else if (repository[i].type[j] === 'psychic') {
+      document.write('<span class="type-background-color violet">psychic </span>');
+    }
+  }
+  document.write('<br>');
+}
