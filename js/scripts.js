@@ -39,17 +39,17 @@ for (var i = 0; i < repository.length; i++) {
   for (var j = 0; j < repository[i].type.length; j++) {
 
     if (repository[i].type[j] === 'grass') {
-      document.write('<span class="type-background-color green">grass </span>');
+      document.write('<span class="type-styles green">grass </span>');
     } else if (repository[i].type[j] === 'poison') {
-      document.write('<span class="type-background-color purple">poison </span>');
+      document.write('<span class="type-styles purple">poison </span>');
     } else if (repository[i].type[j] === 'fire') {
-      document.write('<span class="type-background-color red">fire </span>');
+      document.write('<span class="type-styles red">fire </span>');
     } else if (repository[i].type[j] === 'water') {
-      document.write('<span class="type-background-color blue">water </span>');
+      document.write('<span class="type-styles blue">water </span>');
     } else if (repository[i].type[j] === 'electric') {
-      document.write('<span class="type-background-color yellow">electric </span>');
+      document.write('<span class="type-styles yellow">electric </span>');
     } else if (repository[i].type[j] === 'psychic') {
-      document.write('<span class="type-background-color violet">psychic </span>');
+      document.write('<span class="type-styles violet">psychic </span>');
     }
   }
   document.write('<br>');
